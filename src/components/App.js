@@ -33,7 +33,7 @@ function App()
 		<button id="btn" onClick={addItem} disabled={newItem.trim().length === 0}>Add Item</button>
 		{
 			items.map((item, idx) => (
-				<ListItem item={item} key={`${item}_${idx}`} key={idx} editHandler={editHandler} deleteHandler={deleteHandler}/>
+				<ListItem item={item} key={`${item}_${idx}`} idx={idx} editHandler={editHandler} deleteHandler={deleteHandler}/>
 			))
 		}
 		
